@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		71550A6F1DF0504D0090DB3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71550A6E1DF0504D0090DB3C /* main.m */; };
+		71550A721DF0504D0090DB3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71550A711DF0504D0090DB3C /* AppDelegate.m */; };
+		71550A751DF0504D0090DB3C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71550A741DF0504D0090DB3C /* ViewController.m */; };
+		71550A781DF0504D0090DB3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71550A761DF0504D0090DB3C /* Main.storyboard */; };
+		71550A7A1DF0504D0090DB3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71550A791DF0504D0090DB3C /* Assets.xcassets */; };
+		71550A7D1DF0504D0090DB3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71550A7B1DF0504D0090DB3C /* LaunchScreen.storyboard */; };
+		71550A881DF0504D0090DB3C /* HybirdDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71550A871DF0504D0090DB3C /* HybirdDemoTests.m */; };
+		71550A931DF0504D0090DB3C /* HybirdDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71550A921DF0504D0090DB3C /* HybirdDemoUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		71550A841DF0504D0090DB3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71550A621DF0504D0090DB3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71550A691DF0504D0090DB3C;
+			remoteInfo = HybirdDemo;
+		};
+		71550A8F1DF0504D0090DB3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71550A621DF0504D0090DB3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71550A691DF0504D0090DB3C;
+			remoteInfo = HybirdDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		71550A6A1DF0504D0090DB3C /* HybirdDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HybirdDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71550A6E1DF0504D0090DB3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		71550A701DF0504D0090DB3C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		71550A711DF0504D0090DB3C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		71550A731DF0504D0090DB3C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		71550A741DF0504D0090DB3C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		71550A771DF0504D0090DB3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		71550A791DF0504D0090DB3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		71550A7C1DF0504D0090DB3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		71550A7E1DF0504D0090DB3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71550A831DF0504D0090DB3C /* HybirdDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HybirdDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		71550A871DF0504D0090DB3C /* HybirdDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HybirdDemoTests.m; sourceTree = "<group>"; };
+		71550A891DF0504D0090DB3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71550A8E1DF0504D0090DB3C /* HybirdDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HybirdDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		71550A921DF0504D0090DB3C /* HybirdDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HybirdDemoUITests.m; sourceTree = "<group>"; };
+		71550A941DF0504D0090DB3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		71550A671DF0504D0090DB3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71550A801DF0504D0090DB3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71550A8B1DF0504D0090DB3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		71550A611DF0504D0090DB3C = {
+			isa = PBXGroup;
+			children = (
+				71550A6C1DF0504D0090DB3C /* HybirdDemo */,
+				71550A861DF0504D0090DB3C /* HybirdDemoTests */,
+				71550A911DF0504D0090DB3C /* HybirdDemoUITests */,
+				71550A6B1DF0504D0090DB3C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		71550A6B1DF0504D0090DB3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				71550A6A1DF0504D0090DB3C /* HybirdDemo.app */,
+				71550A831DF0504D0090DB3C /* HybirdDemoTests.xctest */,
+				71550A8E1DF0504D0090DB3C /* HybirdDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71550A6C1DF0504D0090DB3C /* HybirdDemo */ = {
+			isa = PBXGroup;
+			children = (
+				71550A701DF0504D0090DB3C /* AppDelegate.h */,
+				71550A711DF0504D0090DB3C /* AppDelegate.m */,
+				71550A731DF0504D0090DB3C /* ViewController.h */,
+				71550A741DF0504D0090DB3C /* ViewController.m */,
+				71550A761DF0504D0090DB3C /* Main.storyboard */,
+				71550A791DF0504D0090DB3C /* Assets.xcassets */,
+				71550A7B1DF0504D0090DB3C /* LaunchScreen.storyboard */,
+				71550A7E1DF0504D0090DB3C /* Info.plist */,
+				71550A6D1DF0504D0090DB3C /* Supporting Files */,
+			);
+			path = HybirdDemo;
+			sourceTree = "<group>";
+		};
+		71550A6D1DF0504D0090DB3C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				71550A6E1DF0504D0090DB3C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		71550A861DF0504D0090DB3C /* HybirdDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				71550A871DF0504D0090DB3C /* HybirdDemoTests.m */,
+				71550A891DF0504D0090DB3C /* Info.plist */,
+			);
+			path = HybirdDemoTests;
+			sourceTree = "<group>";
+		};
+		71550A911DF0504D0090DB3C /* HybirdDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				71550A921DF0504D0090DB3C /* HybirdDemoUITests.m */,
+				71550A941DF0504D0090DB3C /* Info.plist */,
+			);
+			path = HybirdDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		71550A691DF0504D0090DB3C /* HybirdDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71550A971DF0504D0090DB3C /* Build configuration list for PBXNativeTarget "HybirdDemo" */;
+			buildPhases = (
+				71550A661DF0504D0090DB3C /* Sources */,
+				71550A671DF0504D0090DB3C /* Frameworks */,
+				71550A681DF0504D0090DB3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HybirdDemo;
+			productName = HybirdDemo;
+			productReference = 71550A6A1DF0504D0090DB3C /* HybirdDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		71550A821DF0504D0090DB3C /* HybirdDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71550A9A1DF0504D0090DB3C /* Build configuration list for PBXNativeTarget "HybirdDemoTests" */;
+			buildPhases = (
+				71550A7F1DF0504D0090DB3C /* Sources */,
+				71550A801DF0504D0090DB3C /* Frameworks */,
+				71550A811DF0504D0090DB3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71550A851DF0504D0090DB3C /* PBXTargetDependency */,
+			);
+			name = HybirdDemoTests;
+			productName = HybirdDemoTests;
+			productReference = 71550A831DF0504D0090DB3C /* HybirdDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		71550A8D1DF0504D0090DB3C /* HybirdDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71550A9D1DF0504D0090DB3C /* Build configuration list for PBXNativeTarget "HybirdDemoUITests" */;
+			buildPhases = (
+				71550A8A1DF0504D0090DB3C /* Sources */,
+				71550A8B1DF0504D0090DB3C /* Frameworks */,
+				71550A8C1DF0504D0090DB3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71550A901DF0504D0090DB3C /* PBXTargetDependency */,
+			);
+			name = HybirdDemoUITests;
+			productName = HybirdDemoUITests;
+			productReference = 71550A8E1DF0504D0090DB3C /* HybirdDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		71550A621DF0504D0090DB3C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = coolwxb;
+				TargetAttributes = {
+					71550A691DF0504D0090DB3C = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = SR9X8PCVE3;
+						ProvisioningStyle = Automatic;
+					};
+					71550A821DF0504D0090DB3C = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = SR9X8PCVE3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 71550A691DF0504D0090DB3C;
+					};
+					71550A8D1DF0504D0090DB3C = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = SR9X8PCVE3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 71550A691DF0504D0090DB3C;
+					};
+				};
+			};
+			buildConfigurationList = 71550A651DF0504D0090DB3C /* Build configuration list for PBXProject "HybirdDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 71550A611DF0504D0090DB3C;
+			productRefGroup = 71550A6B1DF0504D0090DB3C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				71550A691DF0504D0090DB3C /* HybirdDemo */,
+				71550A821DF0504D0090DB3C /* HybirdDemoTests */,
+				71550A8D1DF0504D0090DB3C /* HybirdDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		71550A681DF0504D0090DB3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71550A7D1DF0504D0090DB3C /* LaunchScreen.storyboard in Resources */,
+				71550A7A1DF0504D0090DB3C /* Assets.xcassets in Resources */,
+				71550A781DF0504D0090DB3C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71550A811DF0504D0090DB3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71550A8C1DF0504D0090DB3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		71550A661DF0504D0090DB3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71550A751DF0504D0090DB3C /* ViewController.m in Sources */,
+				71550A721DF0504D0090DB3C /* AppDelegate.m in Sources */,
+				71550A6F1DF0504D0090DB3C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71550A7F1DF0504D0090DB3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71550A881DF0504D0090DB3C /* HybirdDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71550A8A1DF0504D0090DB3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71550A931DF0504D0090DB3C /* HybirdDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		71550A851DF0504D0090DB3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71550A691DF0504D0090DB3C /* HybirdDemo */;
+			targetProxy = 71550A841DF0504D0090DB3C /* PBXContainerItemProxy */;
+		};
+		71550A901DF0504D0090DB3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71550A691DF0504D0090DB3C /* HybirdDemo */;
+			targetProxy = 71550A8F1DF0504D0090DB3C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		71550A761DF0504D0090DB3C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71550A771DF0504D0090DB3C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		71550A7B1DF0504D0090DB3C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71550A7C1DF0504D0090DB3C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		71550A951DF0504D0090DB3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		71550A961DF0504D0090DB3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		71550A981DF0504D0090DB3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SR9X8PCVE3;
+				INFOPLIST_FILE = HybirdDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HybirdDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		71550A991DF0504D0090DB3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SR9X8PCVE3;
+				INFOPLIST_FILE = HybirdDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HybirdDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		71550A9B1DF0504D0090DB3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = SR9X8PCVE3;
+				INFOPLIST_FILE = HybirdDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HybirdDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HybirdDemo.app/HybirdDemo";
+			};
+			name = Debug;
+		};
+		71550A9C1DF0504D0090DB3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = SR9X8PCVE3;
+				INFOPLIST_FILE = HybirdDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HybirdDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HybirdDemo.app/HybirdDemo";
+			};
+			name = Release;
+		};
+		71550A9E1DF0504D0090DB3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = SR9X8PCVE3;
+				INFOPLIST_FILE = HybirdDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HybirdDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HybirdDemo;
+			};
+			name = Debug;
+		};
+		71550A9F1DF0504D0090DB3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = SR9X8PCVE3;
+				INFOPLIST_FILE = HybirdDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HybirdDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HybirdDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		71550A651DF0504D0090DB3C /* Build configuration list for PBXProject "HybirdDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71550A951DF0504D0090DB3C /* Debug */,
+				71550A961DF0504D0090DB3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71550A971DF0504D0090DB3C /* Build configuration list for PBXNativeTarget "HybirdDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71550A981DF0504D0090DB3C /* Debug */,
+				71550A991DF0504D0090DB3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		71550A9A1DF0504D0090DB3C /* Build configuration list for PBXNativeTarget "HybirdDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71550A9B1DF0504D0090DB3C /* Debug */,
+				71550A9C1DF0504D0090DB3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		71550A9D1DF0504D0090DB3C /* Build configuration list for PBXNativeTarget "HybirdDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71550A9E1DF0504D0090DB3C /* Debug */,
+				71550A9F1DF0504D0090DB3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 71550A621DF0504D0090DB3C /* Project object */;
+}
