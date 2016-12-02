@@ -15,6 +15,9 @@
 		71550A7D1DF0504D0090DB3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71550A7B1DF0504D0090DB3C /* LaunchScreen.storyboard */; };
 		71550A881DF0504D0090DB3C /* HybirdDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71550A871DF0504D0090DB3C /* HybirdDemoTests.m */; };
 		71550A931DF0504D0090DB3C /* HybirdDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71550A921DF0504D0090DB3C /* HybirdDemoUITests.m */; };
+		71550AA21DF051590090DB3C /* WVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71550AA11DF051590090DB3C /* WVController.m */; };
+		71550AA51DF051700090DB3C /* WKWVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71550AA41DF051700090DB3C /* WKWVController.m */; };
+		71550AA71DF0522C0090DB3C /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 71550AA61DF0522C0090DB3C /* index.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		71550A8E1DF0504D0090DB3C /* HybirdDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HybirdDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71550A921DF0504D0090DB3C /* HybirdDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HybirdDemoUITests.m; sourceTree = "<group>"; };
 		71550A941DF0504D0090DB3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71550AA01DF051590090DB3C /* WVController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVController.h; sourceTree = "<group>"; };
+		71550AA11DF051590090DB3C /* WVController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVController.m; sourceTree = "<group>"; };
+		71550AA31DF051700090DB3C /* WKWVController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWVController.h; sourceTree = "<group>"; };
+		71550AA41DF051700090DB3C /* WKWVController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWVController.m; sourceTree = "<group>"; };
+		71550AA61DF0522C0090DB3C /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +118,11 @@
 				71550A7B1DF0504D0090DB3C /* LaunchScreen.storyboard */,
 				71550A7E1DF0504D0090DB3C /* Info.plist */,
 				71550A6D1DF0504D0090DB3C /* Supporting Files */,
+				71550AA01DF051590090DB3C /* WVController.h */,
+				71550AA11DF051590090DB3C /* WVController.m */,
+				71550AA31DF051700090DB3C /* WKWVController.h */,
+				71550AA41DF051700090DB3C /* WKWVController.m */,
+				71550AA61DF0522C0090DB3C /* index.html */,
 			);
 			path = HybirdDemo;
 			sourceTree = "<group>";
@@ -250,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71550A7D1DF0504D0090DB3C /* LaunchScreen.storyboard in Resources */,
+				71550AA71DF0522C0090DB3C /* index.html in Resources */,
 				71550A7A1DF0504D0090DB3C /* Assets.xcassets in Resources */,
 				71550A781DF0504D0090DB3C /* Main.storyboard in Resources */,
 			);
@@ -278,6 +292,8 @@
 			files = (
 				71550A751DF0504D0090DB3C /* ViewController.m in Sources */,
 				71550A721DF0504D0090DB3C /* AppDelegate.m in Sources */,
+				71550AA21DF051590090DB3C /* WVController.m in Sources */,
+				71550AA51DF051700090DB3C /* WKWVController.m in Sources */,
 				71550A6F1DF0504D0090DB3C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,8 +442,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SR9X8PCVE3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = HybirdDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HybirdDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -438,8 +459,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SR9X8PCVE3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = HybirdDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HybirdDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -514,6 +540,7 @@
 				71550A991DF0504D0090DB3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		71550A9A1DF0504D0090DB3C /* Build configuration list for PBXNativeTarget "HybirdDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +549,7 @@
 				71550A9C1DF0504D0090DB3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		71550A9D1DF0504D0090DB3C /* Build configuration list for PBXNativeTarget "HybirdDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +558,7 @@
 				71550A9F1DF0504D0090DB3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

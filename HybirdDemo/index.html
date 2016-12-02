@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <title>网页</title>
+    </head>
+    <body>
+        
+<!--        <button onclick="jsCallwvNative()" style="height: 100px;width: 200px;">点我调用native方法</button>-->
+
+<!--        <button onclick="Objc.logInfo('哈哈')" style="height: 100px;width: 200px;">点我调用native方法</button>-->
+
+<!--        <button onclick="logHello()" style="height: 100px;width: 200px;">点我调用native方法</button>-->
+
+        <button onclick="wkWebViewTestClick()" style="height: 100px;width: 200px;">点我调用native方法</button>
+
+        
+        <script type="text/javascript">
+            function wvNativeCallJS(){
+                alert("wvController");
+            }
+        
+        
+        function wkNativeCallJS(info){
+            //wkwebview 不直接使用js的alert 显示不了
+            //http://stackoverflow.com/questions/34185339/wkwebview-javascript-confirm-and-alert-not-working
+            console.log(info);
+        }
+        
+        function jsCallwvNative(){
+           //scheme 会转换成小写字母
+           var url = "callnative://nslogHelloWord"
+           window.location.href = url;
+        }
+        
+        
+        function wkWebViewTestClick(){
+            // 复杂数据
+            var list = [1,2,3];
+            var dict = {"name":"阳君", "qq":"937447974"};
+            // JS通知WKWebView，jsCallOC即为在controller中注册的方法名称
+            window.webkit.messageHandlers.jsCallOC.postMessage(dict);
+        }
+        
+        
+
+        </script>
+    </body>
+</html>

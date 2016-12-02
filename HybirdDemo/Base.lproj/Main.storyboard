@@ -1,14 +1,35 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wdD-cK-APm">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="qgt-TO-7fn">
+            <objects>
+                <navigationController id="wdD-cK-APm" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ofu-4l-9Qm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="3fp-fC-b61"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9eb-3J-wfl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1119" y="124"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +37,102 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSq-cX-Kfb">
+                                <rect key="frame" x="107" y="215" width="160" height="30"/>
+                                <state key="normal" title="UIWebView"/>
+                                <connections>
+                                    <action selector="gotoUIWVController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W3k-0z-xdO"/>
+                                    <segue destination="WU6-mJ-pJa" kind="show" id="WCc-XV-Aej"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jt7-Or-3Ra">
+                                <rect key="frame" x="143" y="364" width="88" height="30"/>
+                                <state key="normal" title="WKWebView"/>
+                                <connections>
+                                    <action selector="gotoWKWVController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Epk-3H-ZHV"/>
+                                    <segue destination="XPe-dX-yRw" kind="show" id="FY7-D4-uVN"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Jt7-Or-3Ra" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="127" id="7ak-v3-w02"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Jt7-Or-3Ra" secondAttribute="trailing" constant="128" id="AD3-yc-IgZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Jt7-Or-3Ra" secondAttribute="bottom" constant="273" id="JZN-9Q-VVT"/>
+                            <constraint firstItem="bSq-cX-Kfb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="151" id="NwL-bT-Az0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bSq-cX-Kfb" secondAttribute="trailing" constant="92" id="PuE-UG-ZT7"/>
+                            <constraint firstItem="bSq-cX-Kfb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="91" id="rDS-iC-bs8"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="dLJ-QE-oJQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-244" y="96"/>
+        </scene>
+        <!--Controller-->
+        <scene sceneID="uyR-H5-szg">
+            <objects>
+                <viewController id="WU6-mJ-pJa" customClass="WVController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eIq-0d-F5p"/>
+                        <viewControllerLayoutGuide type="bottom" id="38j-w2-Uod"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7ou-6g-1jq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OHo-3f-gKN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="WU6-mJ-pJa" id="rd9-W9-CvK"/>
+                                </connections>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LP8-D7-UMN">
+                                <rect key="frame" x="151" y="556" width="73" height="30"/>
+                                <state key="normal" title="调用js方法"/>
+                                <connections>
+                                    <action selector="callJSMethod:" destination="WU6-mJ-pJa" eventType="touchUpInside" id="hLL-Rd-1FN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OHo-3f-gKN" firstAttribute="top" secondItem="7ou-6g-1jq" secondAttribute="topMargin" id="5bK-MN-AjT"/>
+                            <constraint firstAttribute="trailing" secondItem="OHo-3f-gKN" secondAttribute="trailing" id="Qz0-0S-CjB"/>
+                            <constraint firstItem="LP8-D7-UMN" firstAttribute="leading" secondItem="OHo-3f-gKN" secondAttribute="trailing" constant="-224" id="RAf-Nk-7D0"/>
+                            <constraint firstItem="LP8-D7-UMN" firstAttribute="top" secondItem="OHo-3f-gKN" secondAttribute="bottom" constant="-111" id="hCd-g8-2HH"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="OHo-3f-gKN" secondAttribute="bottom" id="vwf-Id-vGR"/>
+                            <constraint firstItem="OHo-3f-gKN" firstAttribute="leading" secondItem="7ou-6g-1jq" secondAttribute="leading" id="zOq-sf-LMb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="wv" destination="OHo-3f-gKN" id="iBf-Od-xGF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vaV-kI-FdB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1186" y="-197"/>
+        </scene>
+        <!--Controller-->
+        <scene sceneID="FBq-aK-fXf">
+            <objects>
+                <viewController id="XPe-dX-yRw" customClass="WKWVController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="o9w-U8-vnh"/>
+                        <viewControllerLayoutGuide type="bottom" id="aRa-Ac-6sW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="04G-5a-xRh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yXG-z6-7wH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1202" y="541"/>
         </scene>
     </scenes>
 </document>

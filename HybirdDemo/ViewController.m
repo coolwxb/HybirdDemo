@@ -25,5 +25,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)gotoUIWVController:(id)sender {
+}
+- (IBAction)gotoWKWVController:(id)sender {
+}
 
 @end
